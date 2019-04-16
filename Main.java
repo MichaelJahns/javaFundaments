@@ -1,3 +1,6 @@
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 public class Main{
     public static void main(String[] args){
       pluraize("Lizard", 0);
@@ -5,6 +8,8 @@ public class Main{
       pluraize("Pigmy Elephant", 17);
 
       flipNHeads(4);
+
+      clock();
     }
     public static void pluraize(String animal, int herdSize){
       if(herdSize == 0){
@@ -32,6 +37,19 @@ public class Main{
       }
       if(heads == n){
         System.out.println("It took " + attempts + " coin flips to get " + n + " heads");
+      }
+    }
+
+    public static void clock(){
+      DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
+      String previousTime = " ";
+
+      for(;;){
+        String formattedTime = LocalDateTime.now().format(formatter);
+        if(!formattedTime.equals(previousTime)){
+          System.out.println("The current time is " + formattedTime);
+          previousTime = formattedTime;
+        }    
       }
     }
 }
