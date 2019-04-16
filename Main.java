@@ -43,12 +43,18 @@ public class Main{
     public static void clock(){
       DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
       String previousTime = " ";
+      int cycles = 0;
 
       for(;;){
         String formattedTime = LocalDateTime.now().format(formatter);
+
+        cycles ++ ;
+
         if(!formattedTime.equals(previousTime)){
-          System.out.println("The current time is " + formattedTime);
+          System.out.println(formattedTime + "  " +(float) cycles/1000000 + "MHz");
+
           previousTime = formattedTime;
+          cycles = 0;
         }    
       }
     }
