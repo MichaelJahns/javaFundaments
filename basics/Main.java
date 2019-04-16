@@ -44,14 +44,17 @@ public class Main{
       DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss");
       String previousTime = " ";
       int cycles = 0;
+      
 
       for(;;){
         String formattedTime = LocalDateTime.now().format(formatter);
-
         cycles ++ ;
 
         if(!formattedTime.equals(previousTime)){
-          System.out.println(formattedTime + "  " +(float) cycles/1000000 + "MHz");
+          String units = cycles > 1000000000 ? "GHz" : cycles > 1000000 ? "MHz" : cycles > 1000 ? "KHz" : "Hz";
+          float condensedCycles = cycles > 1000000000 ? cycles/1000000000f : cycles > 1000000 ? cycles/1000000f : cycles > 1000 ? cycles /1000f: cycles;
+
+          System.out.println(formattedTime + "  " + condensedCycles + " " + units);
 
           previousTime = formattedTime;
           cycles = 0;
