@@ -5,6 +5,8 @@ package basicLibrary;
 
 import org.junit.Test;
 
+import java.util.Arrays;
+
 import static basicLibrary.Library.*;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
@@ -58,7 +60,7 @@ public class LibraryTest {
                 };
         int[] expected = {0, 0, 0, 0, 10};
         //Manually testing this passes, I think I have structure my test wrong.
-        assertEquals(expected, lowestAverageArray(masterArray));
+        assertTrue(Arrays.equals(expected, lowestAverageArray(masterArray)));
     }
 
     @Test
