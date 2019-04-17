@@ -7,7 +7,9 @@ public class Main{
       pluraize("Pig", 1);
       pluraize("Pigmy Elephant", 17);
 
+      flipNHeads(1);
       flipNHeads(4);
+      flipNHeads(10);
 
       clock();
     }
