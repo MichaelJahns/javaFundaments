@@ -25,9 +25,9 @@ public class LibraryTest {
 
     @Test
     public void testRollRange() {
-        int[] testStudy = roll(6);
+        int[] testStudy = roll(100);
         for (int i = 0; i < 6; i++) {
-            assertTrue("Roll at" + i + "is out of range", 1 <= testStudy[i] && testStudy[i] <= 6);
+            assertTrue("Roll at " + i + " is out of range", 1 <= testStudy[i] && testStudy[i] <= 6);
         }
 
         int[] testStudyOverload = roll(3, 20);

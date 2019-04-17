@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b528cecb-89b5-45ab-acc2-0b9727d0f958" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/basicLibrary/Library.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/basicLibrary/Library.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
@@ -29,14 +32,12 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/Library.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="179">
-                  <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+                <state relative-caret-position="221">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
                   <folding>
-                    <element signature="method#roll#0;class#Library#0" />
                     <element signature="method#roll#1;class#Library#0" />
                     <element signature="method#containsDuplicates#0;class#Library#0" />
                     <element signature="method#calculateAverage#0;class#Library#0" />
-                    <element signature="method#findSmallestNumber#0;class#Library#0" />
                   </folding>
                 </state>
               </provider>
@@ -49,15 +50,13 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="109">
-                  <caret line="62" column="76" selection-start-line="62" selection-start-column="76" selection-end-line="62" selection-end-column="76" />
+                <state relative-caret-position="238">
+                  <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="method#testRollLength#0;class#LibraryTest#0" />
-                    <element signature="method#testRollRange#0;class#LibraryTest#0" />
                     <element signature="method#testContainsDuplicates#0;class#LibraryTest#0" />
                     <element signature="method#testFindIndex#0;class#LibraryTest#0" />
-                    <element signature="method#findSmallest#0;class#LibraryTest#0" />
                   </folding>
                 </state>
               </provider>
@@ -73,8 +72,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" />
         <option value="$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" />
       </list>
     </option>
   </component>
@@ -180,6 +179,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RunDashboard">
@@ -194,7 +194,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testLowestAverageArray">
+  <component name="RunManager" selected="JUnit.LibraryTest.testRollRange">
+    <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basicLibrary.Library" />
+      <module name="basicLibrary.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basicLibrary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basicLibrary.test" />
       <extension name="coverage">
@@ -206,22 +219,6 @@
       <option name="PACKAGE_NAME" value="basicLibrary" />
       <option name="MAIN_CLASS_NAME" value="basicLibrary.LibraryTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryTest.findSmallest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="basicLibrary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basicLibrary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="basicLibrary" />
-      <option name="MAIN_CLASS_NAME" value="basicLibrary.LibraryTest" />
-      <option name="METHOD_NAME" value="findSmallest" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -258,7 +255,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testfindSmallest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testRollRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basicLibrary.test" />
       <extension name="coverage">
         <pattern>
@@ -268,7 +265,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="basicLibrary" />
       <option name="MAIN_CLASS_NAME" value="basicLibrary.LibraryTest" />
-      <option name="METHOD_NAME" value="testfindSmallest" />
+      <option name="METHOD_NAME" value="testRollRange" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -276,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testRollRange" />
+        <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="Application.Library" />
         <item itemvalue="JUnit.LibraryTest.testLowestAverageArray" />
         <item itemvalue="JUnit.LibraryTest.testFindIndex" />
-        <item itemvalue="JUnit.LibraryTest.testfindSmallest" />
-        <item itemvalue="JUnit.LibraryTest.findSmallest" />
-        <item itemvalue="JUnit.LibraryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -298,27 +295,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest - 2019.04.17 at 10h 56m 53s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest - 2019.04.17 at 10h 58m 21s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest - 2019.04.17 at 12h 59m 19s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest - 2019.04.17 at 13h 00m 19s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest - 2019.04.17 at 13h 07m 51s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testLowestAverageArray - 2019.04.17 at 13h 10m 49s.xml">
-      <configuration name="LibraryTest.testLowestAverageArray" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testFindIndex - 2019.04.17 at 13h 28m 51s.xml">
-      <configuration name="LibraryTest.testFindIndex" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LibraryTest_testFindIndex - 2019.04.17 at 13h 29m 31s.xml">
       <configuration name="LibraryTest.testFindIndex" configurationId="JUnit" />
     </history-entry>
@@ -327,6 +303,27 @@
     </history-entry>
     <history-entry file="LibraryTest_testLowestAverageArray - 2019.04.17 at 13h 30m 37s.xml">
       <configuration name="LibraryTest.testLowestAverageArray" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest - 2019.04.17 at 14h 20m 25s.xml">
+      <configuration name="LibraryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 14h 20m 32s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 14h 20m 54s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 14h 21m 12s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 14h 21m 48s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 14h 21m 58s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 14h 22m 08s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -342,8 +339,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3339254" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25932506" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3339254" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4777975" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -351,7 +348,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3250444" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3250444" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -364,31 +361,27 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/Library.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+        <state relative-caret-position="238">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
           <folding>
-            <element signature="method#roll#0;class#Library#0" />
-            <element signature="method#roll#1;class#Library#0" />
-            <element signature="method#containsDuplicates#0;class#Library#0" />
-            <element signature="method#calculateAverage#0;class#Library#0" />
-            <element signature="method#findSmallestNumber#0;class#Library#0" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#testRollLength#0;class#LibraryTest#0" />
+            <element signature="method#testContainsDuplicates#0;class#LibraryTest#0" />
+            <element signature="method#testFindIndex#0;class#LibraryTest#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="62" column="76" selection-start-line="62" selection-start-column="76" selection-end-line="62" selection-end-column="76" />
+        <state relative-caret-position="221">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#testRollLength#0;class#LibraryTest#0" />
-            <element signature="method#testRollRange#0;class#LibraryTest#0" />
-            <element signature="method#testContainsDuplicates#0;class#LibraryTest#0" />
-            <element signature="method#testFindIndex#0;class#LibraryTest#0" />
-            <element signature="method#findSmallest#0;class#LibraryTest#0" />
+            <element signature="method#roll#1;class#Library#0" />
+            <element signature="method#containsDuplicates#0;class#Library#0" />
+            <element signature="method#calculateAverage#0;class#Library#0" />
           </folding>
         </state>
       </provider>

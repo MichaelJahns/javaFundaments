@@ -7,19 +7,15 @@ import java.util.Arrays;
 
 public class Library {
     public static void main(String args[]) {
-        int masterArray[][] =
-                {
-                        {1, 2, 3, 4, 5},
-                        {10, 20, 30, 40, 50},
-                        {0, 0, 0, 0, 10}
-                };
-        lowestAverageArray(masterArray);
+        for (int i = 0; i < 100000; i++) {
+            System.out.println(Arrays.toString(roll(5)));
+        }
     }
 
     public static int[] roll(int attempts) {
         int[] output = new int[attempts];
         for (int i = 0; i < attempts; i++) {
-            int roll = (int) Math.random() * 5 + 1;
+            int roll = (int) Math.round(Math.random() * 5 + 1);
             output[i] = roll;
         }
         return output;
