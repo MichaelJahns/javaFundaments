@@ -42,6 +42,13 @@ public class LibraryTest {
     }
 
     @Test
+    public void testCalculateAverages() {
+        assertEquals(3, calculateAverage(new int[]{1, 2, 3, 4, 5}));
+        assertEquals(5, calculateAverage(new int[]{5, 5, 5, 5, 5}));
+        assertEquals(39, calculateAverage(new int[]{100, 33, 6, 18}));
+    }
+
+    @Test
     public void testLowestAverageArray() {
         int masterArray[][] =
                 {
@@ -49,15 +56,9 @@ public class LibraryTest {
                         {10, 20, 30, 40, 50},
                         {0, 0, 0, 0, 10}
                 };
-
-        assertEquals(new int[]{0, 0, 0, 0, 10}, lowestAverageArray(masterArray));
-    }
-
-    @Test
-    public void testCalculateAverages() {
-        assertEquals(3, calculateAverage(new int[]{1, 2, 3, 4, 5}));
-        assertEquals(5, calculateAverage(new int[]{5, 5, 5, 5, 5}));
-        assertEquals(39, calculateAverage(new int[]{100, 33, 6, 18}));
+        int[] expected = {0, 0, 0, 0, 10};
+        //Manually testing this passes, I think I have structure my test wrong.
+        assertEquals(expected, lowestAverageArray(masterArray));
     }
 }
 

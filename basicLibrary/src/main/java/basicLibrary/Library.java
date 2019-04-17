@@ -3,8 +3,17 @@
  */
 package basicLibrary;
 
+import java.util.Arrays;
+
 public class Library {
     public static void main(String args[]) {
+        int masterArray[][] =
+                {
+                        {1, 2, 3, 4, 5},
+                        {10, 20, 30, 40, 50},
+                        {0, 0, 0, 0, 10}
+                };
+        lowestAverageArray(masterArray);
     }
 
     public static int[] roll(int attempts) {
@@ -52,6 +61,7 @@ public class Library {
             arrayAverages[i] = calculateAverage(masterArray[i]);
         }
         int index = findIndex(arrayAverages, findSmallestNumber(arrayAverages));
+        System.out.println(Arrays.toString(masterArray[index]));
         return masterArray[index];
     }
 
