@@ -60,7 +60,7 @@ public class Library {
         for (int i = 0; i < masterArray.length; i++) {
             arrayAverages[i] = calculateAverage(masterArray[i]);
         }
-        int index = findIndex(arrayAverages, findSmallestNumber(arrayAverages));
+        int index = findIndex(arrayAverages, findSmallest(arrayAverages));
         System.out.println(Arrays.toString(masterArray[index]));
         return masterArray[index];
     }
@@ -73,7 +73,7 @@ public class Library {
         return -1;
     }
 
-    public static int findSmallestNumber(int[] array) {
+    public static int findSmallest(int[] array) {
         if (array.length == 0) {
             return -1;
         }

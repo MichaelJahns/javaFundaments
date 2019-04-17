@@ -62,7 +62,23 @@ public class LibraryTest {
     }
 
     @Test
-    public void testfindSmallest() {
+    public void testFindIndex() {
+        int[] testArray1 = {1, 2, 3, 4, 5};
+        int[] testArray2 = {5};
+        int[] testArray3 = {100, 35, 99, 0, -39};
+        //int[] testArray4 = new int[10];
+
+        assertEquals(3, findIndex(testArray1, 4));
+        assertEquals(0, findIndex(testArray2, 5));
+        assertEquals(2, findIndex(testArray3, 99));
+
+        //Does not work for an array where a value appears multiple times
+        //assertEquals(0, findIndex(testArray1, 1));
+
+    }
+
+    @Test
+    public void testFindSmallest() {
         int[] testArray1 = {1, 2, 3, 4, 5};
         int[] testArray2 = {9, 4, 7, 2, 5};
         int[] testArray3 = new int[10];
