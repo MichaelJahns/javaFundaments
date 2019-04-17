@@ -11,19 +11,17 @@ import static junit.framework.TestCase.assertTrue;
 
 public class LibraryTest {
     @Test
-    public void testCalculateAverages() {
-        assertEquals(3, calculateAverage(new int[]{1, 2, 3, 4, 5}));
-        assertEquals(5, calculateAverage(new int[]{5, 5, 5, 5, 5}));
-        assertEquals(39, calculateAverage(new int[]{100, 33, 6, 18}));
-    }
-
-    @Test
     public void testRollLength() {
         assertEquals(1, roll(1).length);
         assertEquals(6, roll(6).length);
         assertEquals(10, roll(10).length);
+        //for the overloaded roll
+        assertEquals(5, roll(5, 20));
+        assertEquals(10, roll(10, 2));
+        assertEquals(3, roll(3, 3));
     }
 
+    @Test
     public void testRollRange() {
         int[] testStudy = roll(6);
         for (int i = 0; i < 6; i++) {
@@ -32,11 +30,13 @@ public class LibraryTest {
 
     }
 
+    @Test
     public void testContainsDuplicates() {
         assertEquals(true, containsDuplicates(new int[]{3, 3, 3, 3}));
         assertEquals(false, containsDuplicates(new int[]{1, 2, 3, 4}));
     }
 
+    @Test
     public void testLowestAverageArray() {
         int masterArray[][] =
                 {
@@ -46,6 +46,13 @@ public class LibraryTest {
                 };
 
         assertEquals(new int[]{0, 0, 0, 0, 10}, lowestAverageArray(masterArray));
+    }
+
+    @Test
+    public void testCalculateAverages() {
+        assertEquals(3, calculateAverage(new int[]{1, 2, 3, 4, 5}));
+        assertEquals(5, calculateAverage(new int[]{5, 5, 5, 5, 5}));
+        assertEquals(39, calculateAverage(new int[]{100, 33, 6, 18}));
     }
 }
 
