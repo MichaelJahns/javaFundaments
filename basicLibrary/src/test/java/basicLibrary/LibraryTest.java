@@ -60,5 +60,17 @@ public class LibraryTest {
         //Manually testing this passes, I think I have structure my test wrong.
         assertEquals(expected, lowestAverageArray(masterArray));
     }
+
+    @Test
+    public void testfindSmallest() {
+        int[] testArray1 = {1, 2, 3, 4, 5};
+        int[] testArray2 = {9, 4, 7, 2, 5};
+        int[] testArray3 = new int[10];
+
+        assertEquals(1, findSmallest(testArray1));
+        assertEquals(2, findSmallest(testArray2));
+        assertEquals(0, findSmallest(testArray3));
+    }
 }
+
 
