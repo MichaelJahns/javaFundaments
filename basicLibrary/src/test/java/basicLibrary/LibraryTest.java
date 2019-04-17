@@ -16,9 +16,9 @@ public class LibraryTest {
         assertEquals(6, roll(6).length);
         assertEquals(10, roll(10).length);
         //for the overloaded roll
-        assertEquals(5, roll(5, 20));
-        assertEquals(10, roll(10, 2));
-        assertEquals(3, roll(3, 3));
+        assertEquals(5, roll(5, 20).length);
+        assertEquals(10, roll(10, 2).length);
+        assertEquals(3, roll(3, 3).length);
     }
 
     @Test
@@ -26,6 +26,11 @@ public class LibraryTest {
         int[] testStudy = roll(6);
         for (int i = 0; i < 6; i++) {
             assertTrue("Roll at" + i + "is out of range", 1 <= testStudy[i] && testStudy[i] <= 6);
+        }
+
+        int[] testStudyOverload = roll(3, 20);
+        for (int i = 0; i < 3; i++) {
+            assertTrue("Roll at" + i + "is out of range", 1 <= testStudyOverload[i] && testStudyOverload[i] <= 20);
         }
 
     }
