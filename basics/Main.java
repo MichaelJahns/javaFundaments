@@ -15,12 +15,10 @@ public class Main{
     }
 
     public static String pluralize(String animal, int herdSize){
-      String output = " ";
+      String output = animal;
       if(herdSize == 0 || herdSize > 1){
         output = animal + "s";
-      } else{
-        output = animal;
-      }
+      } 
       return output;
     }
 
@@ -34,7 +32,7 @@ public class Main{
         if(flip == 0){
           heads = 0;
           System.out.println("tails");
-        }if(flip == 1){
+        } if(flip == 1){
           System.out.println("heads");
           heads++;
         }
