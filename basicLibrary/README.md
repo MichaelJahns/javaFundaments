@@ -13,3 +13,12 @@ Basically just Arra.reduce()
 
 ### Array of arrays
 What an absolute mind bender. Took two helper functions and two hours to figure out, and I am positive, absolutely positive that the cannonical solution is like 10 lines long and I made an absolute mountain out of a mole hill. Made me drastically miss Javascript array methods.
+
+### Analyze Hash
+Analyzes the Hash passed into it, and prints the high and low value for the set, and whatever numbers are absent in that range as a string. 
+
+### Hash set
+Helper function: creates and returns a hashSet from a int[][]
+
+### Tally
+Creates a <String, Integer> Hashmap, tallies the frequency with which each canidates name appears and returns a string with the name of the canidate that recieved the most votes
