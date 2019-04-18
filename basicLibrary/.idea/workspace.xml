@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b528cecb-89b5-45ab-acc2-0b9727d0f958" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/src/main/java/linter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/src/main/java/linter/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/src/test/java/linter/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/src/test/java/linter/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -24,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+            <state relative-caret-position="130">
+              <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#testRollLength#0;class#LibraryTest#0" />
@@ -43,15 +47,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/Library.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+            <state relative-caret-position="110">
+              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding>
-                <element signature="method#Has#0;class#Library#0" />
                 <element signature="method#analyzeHash#0;class#Library#0" />
-                <element signature="e#914#923#0" expanded="true" />
                 <element signature="method#roll#0;class#Library#0" />
                 <element signature="method#roll#1;class#Library#0" />
                 <element signature="method#containsDuplicates#0;class#Library#0" />
@@ -72,8 +74,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" />
+        <option value="$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java" />
       </list>
     </option>
   </component>
@@ -104,9 +106,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-11" />
-    <option name="width" value="980" />
-    <option name="height" value="1031" />
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1032" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -133,7 +135,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Library">
+  <component name="RunManager" selected="JUnit.LibraryTest.testTally">
     <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basicLibrary.Library" />
       <module name="basicLibrary.main" />
@@ -194,7 +196,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testRollRange" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testTally" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basicLibrary.test" />
       <extension name="coverage">
         <pattern>
@@ -204,7 +206,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="basicLibrary" />
       <option name="MAIN_CLASS_NAME" value="basicLibrary.LibraryTest" />
-      <option name="METHOD_NAME" value="testRollRange" />
+      <option name="METHOD_NAME" value="testTally" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -212,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LibraryTest.testTally" />
         <item itemvalue="Application.Library" />
         <item itemvalue="JUnit.LibraryTest" />
         <item itemvalue="JUnit.LibraryTest.testHashSet" />
         <item itemvalue="JUnit.LibraryTest.testRollLength" />
-        <item itemvalue="JUnit.LibraryTest.testRollRange" />
       </list>
     </recent_temporary>
   </component>
@@ -234,9 +236,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 15h 02m 26s.xml">
-      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 15h 03m 05s.xml">
       <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
     </history-entry>
@@ -264,9 +263,12 @@
     <history-entry file="LibraryTest - 2019.04.18 at 10h 04m 21s.xml">
       <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="LibraryTest_testTally - 2019.04.18 at 12h 57m 58s.xml">
+      <configuration name="LibraryTest.testTally" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="653" height="687" extended-state="0" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.5193929" />
@@ -278,8 +280,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32072073" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.18378378" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3197158" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.53108346" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -314,10 +316,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/Library.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="method#analyzeHash#0;class#Library#0" />
+            <element signature="method#roll#0;class#Library#0" />
+            <element signature="method#roll#1;class#Library#0" />
+            <element signature="method#containsDuplicates#0;class#Library#0" />
+            <element signature="method#calculateAverage#0;class#Library#0" />
+            <element signature="method#lowestAverageArray#0;class#Library#0" />
+            <element signature="method#findIndex#0;class#Library#0" />
+            <element signature="method#findSmallest#0;class#Library#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="31" column="31" lean-forward="true" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
+        <state relative-caret-position="130">
+          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#testRollLength#0;class#LibraryTest#0" />
@@ -327,25 +346,6 @@
             <element signature="method#testLowestAverageArray#0;class#LibraryTest#0" />
             <element signature="method#testFindIndex#0;class#LibraryTest#0" />
             <element signature="method#testFindSmallest#0;class#LibraryTest#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/Library.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
-          <folding>
-            <element signature="method#Has#0;class#Library#0" />
-            <element signature="method#analyzeHash#0;class#Library#0" />
-            <element signature="e#914#923#0" expanded="true" />
-            <element signature="method#roll#0;class#Library#0" />
-            <element signature="method#roll#1;class#Library#0" />
-            <element signature="method#containsDuplicates#0;class#Library#0" />
-            <element signature="method#calculateAverage#0;class#Library#0" />
-            <element signature="method#lowestAverageArray#0;class#Library#0" />
-            <element signature="method#findIndex#0;class#Library#0" />
-            <element signature="method#findSmallest#0;class#Library#0" />
           </folding>
         </state>
       </provider>
