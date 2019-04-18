@@ -6,12 +6,28 @@ package basicLibrary;
 import org.junit.Test;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 import static basicLibrary.Library.*;
 import static junit.framework.TestCase.assertEquals;
 import static junit.framework.TestCase.assertTrue;
 
 public class LibraryTest {
+
+    @Test
+    public void testHashSet() {
+        int[][] weatherData = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
+        Set<Integer> expected = new HashSet<>(Arrays.asList(51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 64, 65, 66, 70, 71, 72));
+
+        assertEquals(expected, hashSet(weatherData));
+    }
+
     @Test
     public void testRollLength() {
         assertEquals(1, roll(1).length);
@@ -25,15 +41,36 @@ public class LibraryTest {
 
     @Test
     public void testRollRange() {
-        int[] testStudy = roll(100);
-        for (int i = 0; i < 6; i++) {
+        int minRoll = 1000;
+        int maxRoll = -1;
+
+        int[] testStudy = roll(1000);
+        for (int i = 0; i < 1000; i++) {
+            if (testStudy[i] > maxRoll) {
+                maxRoll = testStudy[i];
+            }
+            if (testStudy[i] < minRoll) {
+                minRoll = testStudy[i];
+            }
             assertTrue("Roll at " + i + " is out of range", 1 <= testStudy[i] && testStudy[i] <= 6);
         }
+        assertTrue("Results: min = " + minRoll + " " + "max = " + maxRoll, minRoll == 1 && maxRoll == 6);
 
-        int[] testStudyOverload = roll(3, 20);
-        for (int i = 0; i < 3; i++) {
+        //Tests for overloaded Roll
+        int minRollOverload = 1000;
+        int maxRollOverload = -1;
+        int[] testStudyOverload = roll(1000, 20);
+        for (int i = 0; i < 1000; i++) {
+            if (testStudyOverload[i] > maxRollOverload) {
+                maxRollOverload = testStudyOverload[i];
+            }
+            if (testStudyOverload[i] < minRollOverload) {
+                minRollOverload = testStudyOverload[i];
+            }
             assertTrue("Roll at" + i + "is out of range", 1 <= testStudyOverload[i] && testStudyOverload[i] <= 20);
         }
+        assertTrue("Results: minRollOverload = " + minRollOverload + " " + "maxRollOverload = " + maxRollOverload, minRollOverload == 1 && maxRollOverload == 20);
+
 
     }
 

@@ -3,13 +3,28 @@
  */
 package basicLibrary;
 
-import java.util.Arrays;
+import java.util.HashSet;
 
 public class Library {
     public static void main(String args[]) {
-        for (int i = 0; i < 100000; i++) {
-            System.out.println(Arrays.toString(roll(5)));
+        int[][] weatherData = {
+                {66, 64, 58, 65, 71, 57, 60},
+                {57, 65, 65, 70, 72, 65, 51},
+                {55, 54, 60, 53, 59, 57, 61},
+                {65, 56, 55, 52, 55, 62, 57}
+        };
+        hashSet(weatherData);
+    }
+
+    public static HashSet<Integer> hashSet(int[][] weatherData) {
+        HashSet<Integer> hash = new HashSet<>();
+
+        for (int i = 0; i < weatherData.length; i++) {
+            for (int j = 0; j < weatherData[i].length; j++) {
+                hash.add(weatherData[i][j]);
+            }
         }
+        return hash;
     }
 
     public static int[] roll(int attempts) {
@@ -24,7 +39,7 @@ public class Library {
     public static int[] roll(int attempts, int possibilities) {
         int[] output = new int[attempts];
         for (int i = 0; i < attempts; i++) {
-            int roll = (int) Math.random() * possibilities + 1;
+            int roll = (int) Math.round(Math.random() * (possibilities - 1) + 1);
             output[i] = roll;
         }
         return output;
@@ -57,7 +72,6 @@ public class Library {
             arrayAverages[i] = calculateAverage(masterArray[i]);
         }
         int index = findIndex(arrayAverages, findSmallest(arrayAverages));
-        System.out.println(Arrays.toString(masterArray[index]));
         return masterArray[index];
     }
 
