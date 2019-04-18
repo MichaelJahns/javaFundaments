@@ -3,7 +3,10 @@
  */
 package basicLibrary;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 
 public class Library {
     public static void main(String args[]) {
@@ -13,7 +16,7 @@ public class Library {
                 {55, 54, 60, 53, 59, 57, 61},
                 {65, 56, 55, 52, 55, 62, 57}
         };
-        hashSet(weatherData);
+        analyzeHash(hashSet(weatherData));
     }
 
     public static HashSet<Integer> hashSet(int[][] weatherData) {
@@ -25,6 +28,23 @@ public class Library {
             }
         }
         return hash;
+    }
+
+    public static void analyzeHash(HashSet<Integer> hash) {
+        List<Integer> list = new ArrayList<Integer>(hash);
+        Collections.sort(list);
+
+        System.out.println("Lowest temp: " + list.get(0));
+        System.out.println("Highest temp " + list.get(list.size() - 1));
+
+        for (int i = 0; i < list.get(list.size() - 1); i++) {
+            if (i < list.get(0)) {
+                continue;
+            }
+            if (!list.contains(i)) {
+                System.out.println("Never seen " + i);
+            }
+        }
     }
 
     public static int[] roll(int attempts) {
