@@ -3,20 +3,44 @@
  */
 package basicLibrary;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 public class Library {
     public static void main(String args[]) {
-        int[][] weatherData = {
-                {66, 64, 58, 65, 71, 57, 60},
-                {57, 65, 65, 70, 72, 65, 51},
-                {55, 54, 60, 53, 59, 57, 61},
-                {65, 56, 55, 52, 55, 62, 57}
-        };
-        analyzeHash(hashSet(weatherData));
+//        int[][] weatherData = {
+//                {66, 64, 58, 65, 71, 57, 60},
+//                {57, 65, 65, 70, 72, 65, 51},
+//                {55, 54, 60, 53, 59, 57, 61},
+//                {65, 56, 55, 52, 55, 62, 57}
+//        };
+//        analyzeHash(hashSet(weatherData));
+
+        List<String> votes = new ArrayList<>();
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Bush");
+        votes.add("Shrub");
+        votes.add("Hedge");
+        votes.add("Shrub");
+        votes.add("Bush");
+        votes.add("Hedge");
+        votes.add("Bush");
+
+        String winner = tally(votes);
+
+        System.out.println(winner + " received the most votes!");
+
+    }
+
+    public static String tally(List<String> votes) {
+        HashMap<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < votes.size(); i++) {
+            int votePortion = Collections.frequency(votes, votes.get(i));
+            map.put(votes.get(i), votePortion);
+        }
+
+        String winner = "";
+        return winner;
     }
 
     public static HashSet<Integer> hashSet(int[][] weatherData) {
