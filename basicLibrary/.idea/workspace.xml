@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b528cecb-89b5-45ab-acc2-0b9727d0f958" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/basicLibrary/Library.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/src/main/java/linter/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/src/main/java/linter/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../linter/src/test/java/linter/AppTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../linter/src/test/java/linter/AppTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -23,49 +27,46 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/Library.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="179">
-                  <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
-                  <folding>
-                    <element signature="method#roll#0;class#Library#0" />
-                    <element signature="method#roll#1;class#Library#0" />
-                    <element signature="method#containsDuplicates#0;class#Library#0" />
-                    <element signature="method#calculateAverage#0;class#Library#0" />
-                    <element signature="method#findSmallestNumber#0;class#Library#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="109">
-                  <caret line="62" column="76" selection-start-line="62" selection-start-column="76" selection-end-line="62" selection-end-column="76" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="method#testRollLength#0;class#LibraryTest#0" />
-                    <element signature="method#testRollRange#0;class#LibraryTest#0" />
-                    <element signature="method#testContainsDuplicates#0;class#LibraryTest#0" />
-                    <element signature="method#testFindIndex#0;class#LibraryTest#0" />
-                    <element signature="method#findSmallest#0;class#LibraryTest#0" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#testRollLength#0;class#LibraryTest#0" />
+                <element signature="method#testRollRange#0;class#LibraryTest#0" />
+                <element signature="method#testContainsDuplicates#0;class#LibraryTest#0" />
+                <element signature="method#testCalculateAverages#0;class#LibraryTest#0" />
+                <element signature="method#testLowestAverageArray#0;class#LibraryTest#0" />
+                <element signature="method#testFindIndex#0;class#LibraryTest#0" />
+                <element signature="method#testFindSmallest#0;class#LibraryTest#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/Library.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+              <folding>
+                <element signature="method#analyzeHash#0;class#Library#0" />
+                <element signature="method#roll#0;class#Library#0" />
+                <element signature="method#roll#1;class#Library#0" />
+                <element signature="method#containsDuplicates#0;class#Library#0" />
+                <element signature="method#calculateAverage#0;class#Library#0" />
+                <element signature="method#lowestAverageArray#0;class#Library#0" />
+                <element signature="method#findIndex#0;class#Library#0" />
+                <element signature="method#findSmallest#0;class#Library#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -105,7 +106,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
+    <option name="x" value="948" />
     <option name="width" value="981" />
     <option name="height" value="1032" />
   </component>
@@ -114,73 +115,13 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="basicLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="basicLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basicLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="basicLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basicLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basicLibrary" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basicLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="basicLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="basicLibrary" type="b2602c69:ProjectViewProjectNode" />
-              <item name="basicLibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="basicLibrary" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -194,7 +135,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.LibraryTest.testLowestAverageArray">
+  <component name="RunManager" selected="JUnit.LibraryTest.testTally">
+    <configuration name="Library" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="basicLibrary.Library" />
+      <module name="basicLibrary.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="basicLibrary.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LibraryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basicLibrary.test" />
       <extension name="coverage">
@@ -210,7 +164,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.findSmallest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testHashSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basicLibrary.test" />
       <extension name="coverage">
         <pattern>
@@ -220,13 +174,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="basicLibrary" />
       <option name="MAIN_CLASS_NAME" value="basicLibrary.LibraryTest" />
-      <option name="METHOD_NAME" value="findSmallest" />
+      <option name="METHOD_NAME" value="testHashSet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testFindIndex" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testRollLength" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basicLibrary.test" />
       <extension name="coverage">
         <pattern>
@@ -236,13 +190,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="basicLibrary" />
       <option name="MAIN_CLASS_NAME" value="basicLibrary.LibraryTest" />
-      <option name="METHOD_NAME" value="testFindIndex" />
+      <option name="METHOD_NAME" value="testRollLength" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LibraryTest.testLowestAverageArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LibraryTest.testTally" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="basicLibrary.test" />
       <extension name="coverage">
         <pattern>
@@ -252,23 +206,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="basicLibrary" />
       <option name="MAIN_CLASS_NAME" value="basicLibrary.LibraryTest" />
-      <option name="METHOD_NAME" value="testLowestAverageArray" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LibraryTest.testfindSmallest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="basicLibrary.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basicLibrary.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="basicLibrary" />
-      <option name="MAIN_CLASS_NAME" value="basicLibrary.LibraryTest" />
-      <option name="METHOD_NAME" value="testfindSmallest" />
+      <option name="METHOD_NAME" value="testTally" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -276,11 +214,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LibraryTest.testLowestAverageArray" />
-        <item itemvalue="JUnit.LibraryTest.testFindIndex" />
-        <item itemvalue="JUnit.LibraryTest.testfindSmallest" />
-        <item itemvalue="JUnit.LibraryTest.findSmallest" />
+        <item itemvalue="JUnit.LibraryTest.testTally" />
+        <item itemvalue="Application.Library" />
         <item itemvalue="JUnit.LibraryTest" />
+        <item itemvalue="JUnit.LibraryTest.testHashSet" />
+        <item itemvalue="JUnit.LibraryTest.testRollLength" />
       </list>
     </recent_temporary>
   </component>
@@ -298,35 +236,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="LibraryTest - 2019.04.17 at 10h 56m 53s.xml">
+    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 15h 03m 05s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 15h 13m 49s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.17 at 15h 20m 31s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.18 at 08h 54m 52s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testRollRange - 2019.04.18 at 08h 55m 33s.xml">
+      <configuration name="LibraryTest.testRollRange" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest - 2019.04.18 at 08h 55m 51s.xml">
       <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest - 2019.04.17 at 10h 58m 21s.xml">
+    <history-entry file="LibraryTest_testRollLength - 2019.04.18 at 08h 56m 16s.xml">
+      <configuration name="LibraryTest.testRollLength" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest_testHashSet - 2019.04.18 at 09h 27m 00s.xml">
+      <configuration name="LibraryTest.testHashSet" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="LibraryTest - 2019.04.18 at 10h 04m 21s.xml">
       <configuration name="LibraryTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="LibraryTest - 2019.04.17 at 12h 59m 19s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest - 2019.04.17 at 13h 00m 19s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest - 2019.04.17 at 13h 07m 51s.xml">
-      <configuration name="LibraryTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testLowestAverageArray - 2019.04.17 at 13h 10m 49s.xml">
-      <configuration name="LibraryTest.testLowestAverageArray" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testFindIndex - 2019.04.17 at 13h 28m 51s.xml">
-      <configuration name="LibraryTest.testFindIndex" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testFindIndex - 2019.04.17 at 13h 29m 31s.xml">
-      <configuration name="LibraryTest.testFindIndex" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testFindIndex - 2019.04.17 at 13h 29m 54s.xml">
-      <configuration name="LibraryTest.testFindIndex" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="LibraryTest_testLowestAverageArray - 2019.04.17 at 13h 30m 37s.xml">
-      <configuration name="LibraryTest.testLowestAverageArray" configurationId="JUnit" />
+    <history-entry file="LibraryTest_testTally - 2019.04.18 at 12h 57m 58s.xml">
+      <configuration name="LibraryTest.testTally" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -334,7 +272,7 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.5193929" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.2360877" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="Capture Tool" order="4" />
@@ -342,8 +280,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3339254" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.25932506" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3197158" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.53108346" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -351,7 +289,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3250444" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3243243" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -364,31 +302,50 @@
     </layout>
   </component>
   <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="333" lean-forward="true" selection-start-line="333" selection-end-line="333" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/basicLibrary/Library.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+        <state relative-caret-position="110">
+          <caret line="27" column="10" lean-forward="true" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
           <folding>
+            <element signature="method#analyzeHash#0;class#Library#0" />
             <element signature="method#roll#0;class#Library#0" />
             <element signature="method#roll#1;class#Library#0" />
             <element signature="method#containsDuplicates#0;class#Library#0" />
             <element signature="method#calculateAverage#0;class#Library#0" />
-            <element signature="method#findSmallestNumber#0;class#Library#0" />
+            <element signature="method#lowestAverageArray#0;class#Library#0" />
+            <element signature="method#findIndex#0;class#Library#0" />
+            <element signature="method#findSmallest#0;class#Library#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/basicLibrary/LibraryTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="62" column="76" selection-start-line="62" selection-start-column="76" selection-end-line="62" selection-end-column="76" />
+        <state relative-caret-position="130">
+          <caret line="30" column="66" selection-start-line="30" selection-start-column="66" selection-end-line="30" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#testRollLength#0;class#LibraryTest#0" />
             <element signature="method#testRollRange#0;class#LibraryTest#0" />
             <element signature="method#testContainsDuplicates#0;class#LibraryTest#0" />
+            <element signature="method#testCalculateAverages#0;class#LibraryTest#0" />
+            <element signature="method#testLowestAverageArray#0;class#LibraryTest#0" />
             <element signature="method#testFindIndex#0;class#LibraryTest#0" />
-            <element signature="method#findSmallest#0;class#LibraryTest#0" />
+            <element signature="method#testFindSmallest#0;class#LibraryTest#0" />
           </folding>
         </state>
       </provider>
