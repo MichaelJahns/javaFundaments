@@ -12,7 +12,7 @@ public class Review extends Restaurant {
     }
 
     public Review(Restaurant restaurant, String author, String critique, int rating) {
-        super(restaurant.name, restaurant.location);
+        super(restaurant);
         this.author = author;
         this.critique = critique;
         this.rating = rating;
@@ -21,7 +21,7 @@ public class Review extends Restaurant {
     @Override
     public String toString() {
         String output = "";
-        output = this.name + " at " + this.location + ", Rating: " + this.rating + " stars, By: " + this.author + ", Review: " + this.critique;
+        output = this.name + " at " + this.location + " Price: " + this.averagePrice + "/5, Rating: " + this.rating + " stars, By: " + this.author + ", Review: " + this.critique;
         return output;
     }
 }
