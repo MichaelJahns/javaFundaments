@@ -8,7 +8,7 @@ public class Review extends Restaurant {
     public Review() {
         author = "Annonymous";
         critique = "Food Bad";
-        rating = 5;
+        rating = 0;
     }
 
     public Review(Restaurant restaurant, String author, String critique, int rating) {

@@ -16,6 +16,7 @@ public class Restaurant {
         name = "Unnamed";
         location = "Undisclosed Location";
         averagePrice = 0;
+        reviews = new ArrayList();
     }
 
     public Restaurant(Restaurant restaurant) {
@@ -24,7 +25,7 @@ public class Restaurant {
         averagePrice = restaurant.averagePrice;
     }
 
-    private Restaurant(String name, String location, int averagePrice) {
+    public Restaurant(String name, String location, int averagePrice) {
         this.name = name;
         this.location = location;
         this.averagePrice = averagePrice;
@@ -32,13 +33,9 @@ public class Restaurant {
     }
 
     public static void main(String[] args) {
-        Restaurant subway = new Restaurant("Subway", "3rd and Bell", 2);
         Restaurant chipotles = new Restaurant("Chipotles", "Downtown", 3);
         Restaurant outback = new Restaurant("Outback", "Tacoma", 4);
 
-        subway.addReview("James Matterson", "Irregular shaped ham", 2);
-        subway.addReview("Mable Pouer", "Very good ventiliation", 5);
-        subway.addReview("Keel of a boat", "Barely Nautical at all", 4);
 
         outback.addReview("Tom from Myspace", "How come no one asks how I'm doing?", 4);
         outback.addReview("A funny turtle", "Paid extra for this speaker", 5);
@@ -47,8 +44,6 @@ public class Restaurant {
         chipotles.addReview("Neil Patrick", "I dont eat", 5);
         chipotles.addReview("Hercules", "Eating here was not one of my trials", 5);
         chipotles.addReview("Tilly the Indomitable", "Okay eats. I'd like fresher meat", 4);
-
-        System.out.println("test");
     }
 
     public Review addReview(String author, String critique, int rating) {
