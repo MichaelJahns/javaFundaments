@@ -1,14 +1,14 @@
 package javaFundaments.inhertiance;
 
 public class Review extends Restaurant {
-    public String author;
-    public String critique;
-    public int rating;
+    private String author;
+    private String critique;
+    private int rating;
 
     public Review() {
-        this.author = "Annonymous";
-        this.critique = "Food Bad";
-        this.rating = 5;
+        author = "Annonymous";
+        critique = "Food Bad";
+        rating = 5;
     }
 
     public Review(Restaurant restaurant, String author, String critique, int rating) {
@@ -18,10 +18,18 @@ public class Review extends Restaurant {
         this.rating = rating;
     }
 
+    public int getRating() {
+        return rating;
+    }
+
     @Override
     public String toString() {
+        String restaurant = super.toString();
         String output = "";
-        output = this.name + " at " + this.location + " Price: " + this.averagePrice + "/5, Rating: " + this.rating + " stars, By: " + this.author + ", Review: " + this.critique;
+        output += restaurant;
+        output += " Rating: " + this.rating + " stars";
+        output += " By: " + this.author;
+        output += " Review: " + this.critique;
         return output;
     }
 }

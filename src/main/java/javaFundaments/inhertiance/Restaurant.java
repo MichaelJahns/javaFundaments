@@ -9,26 +9,26 @@ public class Restaurant {
     public String location;
     public int averagePrice;
     public List reviews;
-
+    public int totalStars;
+    public float rating;
 
     public Restaurant() {
-        this.name = "Food dispensary";
-        this.location = "Near you";
-        this.averagePrice = 1;
-        this.reviews = new ArrayList();
+        name = "Unnamed";
+        location = "Undisclosed Location";
+        averagePrice = 0;
     }
 
     public Restaurant(Restaurant restaurant) {
-        this.name = restaurant.name;
-        this.location = restaurant.location;
-        this.averagePrice = restaurant.averagePrice;
+        name = restaurant.name;
+        location = restaurant.location;
+        averagePrice = restaurant.averagePrice;
     }
 
-    public Restaurant(String name, String location, int averagePrice) {
+    private Restaurant(String name, String location, int averagePrice) {
         this.name = name;
         this.location = location;
         this.averagePrice = averagePrice;
-        this.reviews = new ArrayList();
+        reviews = new ArrayList();
     }
 
     public static void main(String[] args) {
@@ -36,28 +36,53 @@ public class Restaurant {
         Restaurant chipotles = new Restaurant("Chipotles", "Downtown", 3);
         Restaurant outback = new Restaurant("Outback", "Tacoma", 4);
 
-        subway.addReview(subway, "James Matterson", "Irregular shaped ham", 2);
-        subway.addReview(subway, "Mable Pouer", "Very good ventiliation", 5);
-        subway.getReviews();
+        subway.addReview("James Matterson", "Irregular shaped ham", 2);
+        subway.addReview("Mable Pouer", "Very good ventiliation", 5);
+        subway.addReview("Keel of a boat", "Barely Nautical at all", 4);
 
-        outback.addReview(outback, "Brary Fortsworth", "Reminds me of home", 1);
+        outback.addReview("Tom from Myspace", "How come no one asks how I'm doing?", 4);
+        outback.addReview("A funny turtle", "Paid extra for this speaker", 5);
+        outback.addReview("Brary Fortsworth", "Reminds me of home", 1);
+
+        chipotles.addReview("Neil Patrick", "I dont eat", 5);
+        chipotles.addReview("Hercules", "Eating here was not one of my trials", 5);
+        chipotles.addReview("Tilly the Indomitable", "Okay eats. I'd like fresher meat", 4);
+
+        System.out.println("test");
     }
 
-    public static Review addReview(Restaurant restaurant, String author, String critique, int rating) {
-        Review newReview = new Review(restaurant, author, critique, rating);
-        restaurant.reviews.add(newReview);
-        System.out.println(newReview.toString());
+    public Review addReview(String author, String critique, int rating) {
+        Review newReview = new Review(this, author, critique, rating);
+        this.reviews.add(newReview);
+        this.updateRating(newReview);
         return newReview;
     }
 
-//    public void updateStars() {
-//        double averageRating = 0;
-//        for (int i = 0; i < this.reviews.size(); i++) {
-//            averageRating += [i];
-//        }
-//    }
+    //Overrides
+    @Override
+    public String toString() {
+        String output = "";
+        output += this.name + " at " + this.location;
+        output += " " + this.getPrice() + "\n";
+        output += " ";
+        return output;
+    }
 
+    //Helper Functions
     public List getReviews() {
         return this.reviews;
+    }
+
+    public String getPrice() {
+        String dollarSigns = "";
+        for (int i = 0; i < averagePrice; i++) {
+            dollarSigns += "$";
+        }
+        return dollarSigns;
+    }
+
+    public void updateRating(Review review) {
+        this.totalStars += review.getRating();
+        this.rating = (float) totalStars / this.reviews.size();
     }
 }
