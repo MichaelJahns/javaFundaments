@@ -1,6 +1,6 @@
 package javaFundaments.inhertiance;
 
-public class Review extends Restaurant {
+public class Review {
     private String author;
     private String critique;
     private int rating;
@@ -12,7 +12,6 @@ public class Review extends Restaurant {
     }
 
     public Review(Restaurant restaurant, String author, String critique, int rating) {
-        super(restaurant);
         this.author = author;
         this.critique = critique;
         this.rating = rating;

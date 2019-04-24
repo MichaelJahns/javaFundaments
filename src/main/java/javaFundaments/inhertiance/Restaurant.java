@@ -3,29 +3,16 @@ package javaFundaments.inhertiance;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Restaurant {
+public class Restaurant extends Business {
 
     public String name;
     public String location;
     public int averagePrice;
-    public List reviews;
-    public int totalStars;
+    public List<Review> reviews;
     public float rating;
 
-    public Restaurant() {
-        name = "Unnamed";
-        location = "Undisclosed Location";
-        averagePrice = 0;
-        reviews = new ArrayList();
-    }
-
-    public Restaurant(Restaurant restaurant) {
-        name = restaurant.name;
-        location = restaurant.location;
-        averagePrice = restaurant.averagePrice;
-    }
-
     public Restaurant(String name, String location, int averagePrice) {
+        super(name, location, averagePrice);
         this.name = name;
         this.location = location;
         this.averagePrice = averagePrice;
@@ -44,13 +31,7 @@ public class Restaurant {
         chipotles.addReview("Neil Patrick", "I dont eat", 5);
         chipotles.addReview("Hercules", "Eating here was not one of my trials", 5);
         chipotles.addReview("Tilly the Indomitable", "Okay eats. I'd like fresher meat", 4);
-    }
-
-    public Review addReview(String author, String critique, int rating) {
-        Review newReview = new Review(this, author, critique, rating);
-        this.reviews.add(newReview);
-        this.updateRating(newReview);
-        return newReview;
+        System.out.println(chipotles.getReviews());
     }
 
     //Overrides
@@ -77,7 +58,22 @@ public class Restaurant {
     }
 
     public void updateRating(Review review) {
-        this.totalStars += review.getRating();
+        int totalStars = getTotalStars();
         this.rating = (float) totalStars / this.reviews.size();
+    }
+
+    private int getTotalStars() {
+        int totalStars = 0;
+        for (Review r : reviews) {
+            totalStars += r.getRating();
+        }
+        return totalStars;
+    }
+
+    public Review addReview(String author, String critique, int rating) {
+        Review newReview = new Review(this, author, critique, rating);
+        this.reviews.add(newReview);
+        this.updateRating(newReview);
+        return newReview;
     }
 }
