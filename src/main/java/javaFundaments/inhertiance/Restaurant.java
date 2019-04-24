@@ -1,22 +1,9 @@
 package javaFundaments.inhertiance;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Restaurant extends Business {
-
-    public String name;
-    public String location;
-    public int averagePrice;
-    public List<Review> reviews;
-    public float rating;
-
     public Restaurant(String name, String location, int averagePrice) {
         super(name, location, averagePrice);
-        this.name = name;
-        this.location = location;
-        this.averagePrice = averagePrice;
-        reviews = new ArrayList();
+
     }
 
     public static void main(String[] args) {
@@ -42,38 +29,5 @@ public class Restaurant extends Business {
         output += " " + this.getPrice() + "\n";
         output += " ";
         return output;
-    }
-
-    //Helper Functions
-    public List getReviews() {
-        return this.reviews;
-    }
-
-    public String getPrice() {
-        String dollarSigns = "";
-        for (int i = 0; i < averagePrice; i++) {
-            dollarSigns += "$";
-        }
-        return dollarSigns;
-    }
-
-    public void updateRating(Review review) {
-        int totalStars = getTotalStars();
-        this.rating = (float) totalStars / this.reviews.size();
-    }
-
-    private int getTotalStars() {
-        int totalStars = 0;
-        for (Review r : reviews) {
-            totalStars += r.getRating();
-        }
-        return totalStars;
-    }
-
-    public Review addReview(String author, String critique, int rating) {
-        Review newReview = new Review(this, author, critique, rating);
-        this.reviews.add(newReview);
-        this.updateRating(newReview);
-        return newReview;
     }
 }

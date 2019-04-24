@@ -11,7 +11,7 @@ public class Review {
         rating = 0;
     }
 
-    public Review(Restaurant restaurant, String author, String critique, int rating) {
+    public Review(Business business, String author, String critique, int rating) {
         this.author = author;
         this.critique = critique;
         this.rating = rating;
