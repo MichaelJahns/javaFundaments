@@ -22,8 +22,9 @@ public class User {
         if (this.getHistory() == null) {
             return hasReviewed;
         }
+        //If user has reviewed this business before this whole block will return true, which will dead end in the above bloke
         for (Review r : this.history) {
-            if (r.getSubject() == business) {
+            if (r.getBusiness() == business) {
                 hasReviewed = true;
             }
         }

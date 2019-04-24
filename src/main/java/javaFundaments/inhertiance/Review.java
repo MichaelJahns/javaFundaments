@@ -2,7 +2,8 @@ package javaFundaments.inhertiance;
 
 public class Review {
     private User user;
-    private Business subject;
+    private Business business;
+    private String product;
     private String critique;
     private int rating;
 
@@ -13,7 +14,15 @@ public class Review {
 
     public Review(User user, Business business, String critique, int rating) {
         this.user = user;
-        this.subject = business;
+        this.business = business;
+        this.critique = critique;
+        this.rating = rating;
+    }
+
+    public Review(User user, Business business, String product, String critique, int rating) {
+        this.user = user;
+        this.business = business;
+        this.product = product;
         this.critique = critique;
         this.rating = rating;
     }
@@ -22,7 +31,17 @@ public class Review {
         return rating;
     }
 
-    public Business getSubject() {
-        return subject;
+    public Business getBusiness() {
+        return business;
+    }
+
+    @Override
+    public String toString() {
+        String output = "";
+        output += user.getUserName() + " ";
+        output += business.name;
+        output += " review: " + critique;
+        output += " " + rating + "stars";
+        return output;
     }
 }

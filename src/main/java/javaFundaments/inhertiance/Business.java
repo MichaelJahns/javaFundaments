@@ -21,7 +21,7 @@ public abstract class Business {
         return this.reviews;
     }
 
-    private String getPrice() {
+    public String getPrice() {
         String dollarSigns = "";
         for (int i = 0; i < averagePrice; i++) {
             dollarSigns += "$";
@@ -50,4 +50,37 @@ public abstract class Business {
         output += ": " + rating + " stars " + this.getPrice();
         return output;
     }
+
+    public Review reviewBusiness(User user, String critique, int rating) {
+        boolean unique = user.ensureUniqueFeedBack(this);
+        if (unique == false) {
+            Review newReview = new Review(user, this, critique, rating);
+            this.reviews.add(newReview);
+            this.updateRating();
+            user.history.add(newReview);
+
+            return newReview;
+        } else {
+            System.out.println("Stopping.. user has already reviewed this business once");
+            return null;
+        }
+    }
+
+    //If I had a week with this project, product would be an abstract and i would make a movie class to pass in.
+    public Review reviewProduct(User user, String product, String critique, int rating) {
+        boolean unique = user.ensureUniqueFeedBack(this);
+        if (unique == false) {
+            Review newReview = new Review(user, this, product, critique, rating);
+            this.reviews.add(newReview);
+            this.updateRating();
+            user.history.add(newReview);
+
+            return newReview;
+        } else {
+            System.out.println("Stopping.. user has already reviewed this business once");
+            return null;
+        }
+    }
+
+    ;
 }

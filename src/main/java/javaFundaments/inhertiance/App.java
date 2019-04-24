@@ -3,16 +3,20 @@ package javaFundaments.inhertiance;
 public class App {
     public static void main(String args[]) {
         User Tom = new User("Tom From Myspace");
+
         Restaurant chipotles = new Restaurant("Chipotles", "Downtown", 3, "Mexican");
-        chipotles.addReview(Tom, "How come no one asks how I'm doing?", 4);
-        chipotles.addReview(Tom, "No Seriously", 1);
-//        outback.addReview("A funny turtle", "Paid extra for this speaker", 5);
-//        outback.addReview("Brary Fortsworth", "Reminds me of home", 1);
-//
-//        chipotles.addReview("Neil Patrick", "I dont eat", 5);
-//        chipotles.addReview("Hercules", "Eating here was not one of my trials", 5);
-//        chipotles.addReview("Tilly the Indomitable", "Okay eats. I'd like fresher meat", 4);
-//        System.out.println(chipotles.toString());
+        Shop riteAid = new Shop("Rite Aid", "Bellringer Street", 2, "Convenience");
+        Theater silverSkin = new Theater("Silver Skin", "Paramount st.", 5);
+        silverSkin.addMovie("Captain Marvel");
+        silverSkin.addMovie("End Game");
+        silverSkin.addMovie("Captain Marvel");
+        silverSkin.removeMovie("End Game");
+
+        System.out.println(silverSkin.toString());
+        riteAid.reviewBusiness(Tom, "So nearby and SO convenient.", 5);
+        System.out.println(chipotles.getReviews());
+
+        silverSkin.reviewProduct(Tom, "Captain Marvel", "Very cool, thank you Kayne", 5);
     }
 }
 
