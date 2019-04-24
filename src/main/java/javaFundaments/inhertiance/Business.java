@@ -14,7 +14,7 @@ public abstract class Business {
         this.name = name;
         this.location = location;
         this.averagePrice = averagePrice;
-        reviews = new ArrayList();
+        this.reviews = new ArrayList();
     }
 
     public List getReviews() {
@@ -37,15 +37,17 @@ public abstract class Business {
         return totalStars;
     }
 
-    private void updateRating() {
+    public void updateRating() {
         int totalStars = getTotalStars();
         this.rating = (float) totalStars / this.reviews.size();
     }
 
-    public Review addReview(String author, String critique, int rating) {
-        Review newReview = new Review(this, author, critique, rating);
-        this.reviews.add(newReview);
-        this.updateRating();
-        return newReview;
+
+    public String toString() {
+        String rating = (String) String.format("%.2f", this.rating);
+        String output = "";
+        output += this.name + ", " + this.location;
+        output += ": " + rating + " stars " + this.getPrice();
+        return output;
     }
 }
