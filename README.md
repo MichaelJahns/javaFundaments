@@ -8,5 +8,5 @@ To house the first ten labs of code fellows 401 java
 | BasicsLibrary       | [link](/src/main/java/javaFundaments/basicsLibrary/)        |
 | Linter              | [link](/src/main/java/javaFundaments/linter/)               |
 | BitMapsAndTransforms| [link](/src/main/java/javaFundaments/bitMapsAndTransforms/) |
-| Inheritance         | [link](/src/main/java/javaFundaments/inheritance/)          |
+| Inheritance         | [link](/src/main/java/javaFundaments/inhertiance)          |
 
