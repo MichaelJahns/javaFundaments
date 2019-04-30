@@ -1,19 +1,28 @@
 package javaFundaments.inhertiance;
 
-public class Review extends Restaurant {
-    private String author;
+public class Review {
+    private User user;
+    private Business business;
+    private String product;
     private String critique;
     private int rating;
 
     public Review() {
-        author = "Annonymous";
-        critique = "Food Bad";
-        rating = 0;
+        this.critique = "corrupted";
+        this.rating = 1;
     }
 
-    public Review(Restaurant restaurant, String author, String critique, int rating) {
-        super(restaurant);
-        this.author = author;
+    public Review(User user, Business business, String critique, int rating) {
+        this.user = user;
+        this.business = business;
+        this.critique = critique;
+        this.rating = rating;
+    }
+
+    public Review(User user, Business business, String product, String critique, int rating) {
+        this.user = user;
+        this.business = business;
+        this.product = product;
         this.critique = critique;
         this.rating = rating;
     }
@@ -22,14 +31,17 @@ public class Review extends Restaurant {
         return rating;
     }
 
+    public Business getBusiness() {
+        return business;
+    }
+
     @Override
     public String toString() {
-        String restaurant = super.toString();
         String output = "";
-        output += restaurant;
-        output += " Rating: " + this.rating + " stars";
-        output += " By: " + this.author;
-        output += " Review: " + this.critique;
+        output += user.getUserName() + " ";
+        output += business.name;
+        output += " review: " + critique;
+        output += " " + rating + "stars";
         return output;
     }
 }
