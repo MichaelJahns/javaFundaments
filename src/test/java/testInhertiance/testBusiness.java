@@ -17,6 +17,10 @@ public class testBusiness {
         List<Review> actual = restaurant.getReviews();
         List<Review> expected = new ArrayList<>();
 
+        assertEquals("New Restaurant name was not expected", "Restaurant", restaurant.name);
+        assertEquals("New Restaurant location was not expected", "Here", restaurant.location);
+        assertEquals("New Restaurant rating was not expected", 0, restaurant.rating, .0001);
+        assertEquals("New Restaurant averagePrice was not expected", 5, restaurant.averagePrice);
         assertEquals("New Restaurant did not have an empty review list", expected, actual);
     }
 
@@ -26,6 +30,10 @@ public class testBusiness {
         List<Review> actual = shop.getReviews();
         List<Review> expected = new ArrayList<>();
 
+        assertEquals("New Shop name was not expected", "Shop", shop.name);
+        assertEquals("New Shop location was not expected", "Here", shop.location);
+        assertEquals("New Shop rating was not expected", 0, shop.rating, .0001);
+        assertEquals("New Shop averagePrice was not expected", 5, shop.averagePrice);
         assertEquals("New Shop did not have an empty review list", expected, actual);
     }
 
@@ -36,6 +44,10 @@ public class testBusiness {
         List<Review> actual = theater.getReviews();
         List<Review> expected = new ArrayList<>();
 
+        assertEquals("New Theater name was not expected", "Theater", theater.name);
+        assertEquals("New Theater location was not expected", "Here", theater.location);
+        assertEquals("New Theater rating was not expected", 0, theater.rating, .0001);
+        assertEquals("New Theater averagePrice was not expected", 5, theater.averagePrice);
         assertEquals("New Theater did not have an empty review list", expected, actual);
     }
 
@@ -60,11 +72,14 @@ public class testBusiness {
     public void testGetPrice() {
         Restaurant cheaper = new Restaurant("cheap", "Here", 1, "cheapFood");
         String expectedCheaper = "$";
+        assertEquals(expectedCheaper, cheaper.getPrice());
+
+        Restaurant midRange = new Restaurant("midRange", "Here", 3, "middleFood");
+        String expectedMidRange = "$$$";
+        assertEquals(expectedMidRange, midRange.getPrice());
+
         Restaurant expensive = new Restaurant("expensive", "Here", 5, "expensiveFood");
         String expectedExpensive = "$$$$$";
-
-        //Asserts that the getPrice() method returns a number of $ equal to the averagePrice of a business
-        assertEquals(expectedCheaper, cheaper.getPrice());
         assertEquals(expectedExpensive, expensive.getPrice());
     }
 
@@ -89,16 +104,25 @@ public class testBusiness {
     @Test
     public void testGetReviews() {
         User reviewer = new User("Reviewer");
-        Restaurant tester = new Restaurant("tester", "Here", 1, "tests");
-
-        tester.reviewBusiness(reviewer, "Test", 5);
-
         List expected = new ArrayList() {
         };
-        expected.add("Reviewer tester review: Test 5stars");
-        List actualBusinessReviews = tester.getReviews();
 
-        assertEquals("Review was not saved in the expected format", expected.toString(), actualBusinessReviews.toString());
+        Restaurant tester = new Restaurant("tester", "Here", 1, "tests");
+        tester.reviewBusiness(reviewer, "Test", 5);
+        expected.add("Reviewer tester review: Test 5stars");
+        List actualBusinessReviews1 = tester.getReviews();
+        assertEquals("Review was not saved in the expected format", expected.toString(), actualBusinessReviews1.toString());
+
+        Restaurant tester2 = new Restaurant("tester2", "Here2", 1, "tests2");
+        tester2.reviewBusiness(reviewer, "Test2", 5);
+        List actualBusinessReviews2 = tester2.getReviews();
+        assertEquals("Review was not saved in the expected format", "[Reviewer tester2 review: Test2 5stars]", actualBusinessReviews2.toString());
+
+        Restaurant tester3 = new Restaurant("tester3", "Here3", 1, "tests3");
+        tester3.reviewBusiness(reviewer, "Test3", 5);
+        List actualBusinessReviews3 = tester3.getReviews();
+        assertEquals("Review was not saved in the expected format", "[Reviewer tester3 review: Test3 5stars]", actualBusinessReviews3.toString());
+
     }
 
     @Test
